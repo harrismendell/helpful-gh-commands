@@ -14,4 +14,4 @@ gh alias set r "search prs --state=open --review-requested=@me --involves=@me --
 gh alias set p "search prs --state=open --author=@me --json repository,number,title,url,updatedAt --template '{{range .}}{{tablerow .repository.name (.number | autocolor \"green\") .title (.url | autocolor \"cyan\") (timeago .updatedAt)}}{{end}}'"
 ```
 
-`gh p` will now provide a list of **PRs** you've authored across all repos
+`gh p` will now provide a list of prs you've authored across all repos
