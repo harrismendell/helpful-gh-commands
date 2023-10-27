@@ -11,7 +11,7 @@ Included is a list of [GitHub CLI](https://github.com/cli/cli) commands I find p
 gh search prs --state=open --review-requested=@me --involves=@me --json repository,number,title,url,updatedAt --template '{{range .}}{{tablerow .repository.name (.number | autocolor "green") .title (.url | autocolor "cyan") (timeago .updatedAt)}}{{end}}'
 ```
 
-This will only show prs that you are directly set as a reviewer for. (It will omit prs that are assigned to a group that you belong to). To change this behavior remove the --involves flag.
+This will only show prs that you are directly set as a reviewer for. (It will omit prs that are assigned to a team that you belong to). To change this behavior remove the --involves flag.
 
 ##  List open PRs you've authored across all repos
 ```
