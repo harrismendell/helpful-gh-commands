@@ -1,7 +1,7 @@
 README.md
 
 # Helpful GitHub CLI Commands
-Included is a list of [gh cli](https://github.com/cli/cli) commands I find particular useful. You can read and copy them below, or alternatively import them from [aliases.yaml](aliases.yaml) with the command `gh alias import aliases.yaml`.
+Included is a list of [GitHub CLI](https://github.com/cli/cli) commands I find particular useful. You can read and copy them below, or alternatively import them from [aliases.yaml](aliases.yaml) with the command `gh alias import aliases.yaml`.
 
 
 
