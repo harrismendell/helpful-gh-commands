@@ -1,0 +1,2 @@
+p: search prs --state=open --author=@me --json repository,number,title,url,updatedAt --template '{{range .}}{{tablerow .repository.name (.number | autocolor  "green") .title (.url | autocolor "cyan") (timeago .updatedAt)}}{{end}}'
+r: search prs --state=open --review-requested=@me --involves=@me --json repository,number,title,url,updatedAt --template '{{range .}}{{tablerow .repository.name (.number | autocolor "green") .title (.url | autocolor "cyan") (timeago .updatedAt)}}{{end}}'
